@@ -1,6 +1,6 @@
 import { computed, flow, makeObservable, observable } from "mobx";
 import { addMenusAPI, deleteMenusAPI, getMenusAPI, updateMenusAPI } from "../api/todos";
-import { Todo, Todo1 } from "../model";
+import { Todo } from "../model";
 
 export class ObservableTodoStore {
      todos = observable.array<Todo>([]);
@@ -10,10 +10,12 @@ export class ObservableTodoStore {
                todos: observable,
                completedTodosCount: computed,
                report: computed,
+               taskTodo: computed,
+               taskDone: computed,
                addTodo: flow,
                fetchTodos: flow,
                updateTodo: flow,
-               deleteTodo: flow
+               deleteTodo: flow,
           });
           this.fetchTodos()
      }
@@ -26,6 +28,18 @@ export class ObservableTodoStore {
                console.error('Error fetching todos:', error);
           }
      })
+
+     get taskTodo() {
+          return this.todos.filter(
+               todo => !todo.isShow
+          )
+     }
+
+     get taskDone() {
+          return this.todos.filter(
+               todo => todo.isShow
+          )
+     }
 
      get completedTodosCount() {
           return this.todos.filter(
@@ -42,7 +56,7 @@ export class ObservableTodoStore {
                `Progress: ${this.completedTodosCount}/${this.todos.length}`;
      }
 
-     addTodo = flow(function* (this: ObservableTodoStore, todo: Todo1) {
+     addTodo = flow(function* (this: ObservableTodoStore, todo: Todo) {
           try {
                const addedTodo = yield addMenusAPI(todo); // Thêm todo qua API
                this.todos.push(addedTodo); // Thêm todo vào mảng todos

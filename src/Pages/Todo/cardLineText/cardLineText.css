@@ -1,0 +1,44 @@
+.card {
+     background: #15101C;
+     /* Màu nền của card */
+     border-radius: 10px;
+     /* Đường cong viền card */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* Shadow cho card */
+     padding: 28px;
+     /* Khoảng cách bên trong card */
+     width: calc(100% - 60px);
+     /* Độ rộng của card */
+     margin: 20px 0 0 0;
+}
+
+.card:hover {
+     border: 2px solid blue;
+     border-radius: 0px;
+}
+
+.card-content {
+     display: flex;
+     align-items: center;
+     /* Canh chỉnh theo chiều dọc */
+}
+
+.text {
+     flex-grow: 1;
+     /* Để văn bản mở rộng đầy đủ chiều rộng còn lại */
+     white-space: nowrap;
+     /* Ngăn các từ bị ngắt dòng */
+     overflow: hidden;
+     /* Ẩn văn bản dài hơn */
+     text-overflow: ellipsis;
+     /* Hiển thị dấu "..." khi văn bản bị cắt ngắn */
+}
+
+.color-text-task-todo {
+     color: #9E78CF
+}
+
+.color-text-task-done {
+     color: #78CFB0;
+     text-decoration: line-through
+}

@@ -1,0 +1,34 @@
+.task-done {
+     margin-top: 50px;
+     /* display: flex; */
+     align-items: center;
+}
+
+.scroll-task {
+     overflow-y: auto;
+     /* Hiển thị thanh cuộn dọc khi nội dung vượt quá kích thước */
+     max-height: 250px;
+     /* 180px là tổng chiều cao của phần addNew, margin-top của task-to-do và task-done */
+}
+
+/* Thiết lập kích thước của thanh cuộn */
+::-webkit-scrollbar {
+     width: 10px;
+     /* Chiều rộng thanh cuộn */
+}
+
+/* Thiết lập màu của thanh cuộn */
+::-webkit-scrollbar-track {
+     background: #15101C;
+     /* Màu nền của thanh cuộn */
+}
+
+::-webkit-scrollbar-thumb {
+     background: #888;
+     /* Màu của nút cuộn */
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: #555;
+     /* Màu của nút cuộn khi di chuột qua */
+}
