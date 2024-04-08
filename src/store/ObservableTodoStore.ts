@@ -1,4 +1,4 @@
-import { computed, flow, makeObservable, observable } from "mobx";
+import { action, computed, makeObservable, observable } from "mobx";
 import { addMenusAPI, deleteMenusAPI, getMenusAPI, updateMenusAPI } from "../api/todos";
 import { Todo } from "../model";
 
@@ -9,25 +9,25 @@ export class ObservableTodoStore {
           makeObservable(this, {
                todos: observable,
                completedTodosCount: computed,
-               report: computed,
+               // report: computed,
                taskTodo: computed,
                taskDone: computed,
-               addTodo: flow,
-               fetchTodos: flow,
-               updateTodo: flow,
-               deleteTodo: flow,
+               addTodo: action,
+               fetchTodos: action,
+               updateTodo: action,
+               deleteTodo: action,
           });
           this.fetchTodos()
      }
 
-     fetchTodos = flow(function* (this: ObservableTodoStore) {
+     async fetchTodos() {
           try {
-               const todosData = yield getMenusAPI();
+               const todosData = await getMenusAPI();
                this.todos.replace(todosData);
           } catch (error) {
                console.error('Error fetching todos:', error);
           }
-     })
+     }
 
      get taskTodo() {
           return this.todos.filter(
@@ -47,35 +47,35 @@ export class ObservableTodoStore {
           ).length;
      }
 
-     get report() {
-          if (this.todos.length === 0)
-               return "<none>";
-          const nextTodo = this.todos.find(todo => todo.isShow === false);
+     // get report() {
+     //      if (this.todos.length === 0)
+     //           return "<none>";
+     //      const nextTodo = this.todos.find(todo => todo.isShow === false);
 
-          return `Next todo: "${nextTodo ? nextTodo.name : "<none>"}". ` +
-               `Progress: ${this.completedTodosCount}/${this.todos.length}`;
-     }
+     //      return `Next todo: "${nextTodo ? nextTodo.name : "<none>"}". ` +
+     //           `Progress: ${this.completedTodosCount}/${this.todos.length}`;
+     // }
 
-     addTodo = flow(function* (this: ObservableTodoStore, todo: Todo) {
+     async addTodo(todo: Todo) {
           try {
-               const addedTodo = yield addMenusAPI(todo); // Thêm todo qua API
+               const addedTodo = await addMenusAPI(todo); // Thêm todo qua API
                this.todos.push(addedTodo); // Thêm todo vào mảng todos
           } catch (error) {
                console.error('Error adding todo:', error);
           }
-     });
+     }
 
-     updateTodo = flow(function* (this: ObservableTodoStore, todo: Todo) {
+     async updateTodo(todo: Todo) {
           try {
-               yield updateMenusAPI(todo.id, todo); // Cập nhật todo qua API
+               await updateMenusAPI(todo.id, todo); // Cập nhật todo qua API
           } catch (error) {
                console.error('Error updating todo:', error);
           }
-     });
+     }
 
-     deleteTodo = flow(function* (this: ObservableTodoStore, id: string) {
+     async deleteTodo(id: string) {
           try {
-               yield deleteMenusAPI(id); // Xóa todo qua API
+               await deleteMenusAPI(id); // Xóa todo qua API
                const index = this.todos.findIndex(todo => todo.id === id);
                if (index !== -1) {
                     this.todos.splice(index, 1); // Xóa todo khỏi mảng todos nếu tìm thấy
@@ -83,7 +83,7 @@ export class ObservableTodoStore {
           } catch (error) {
                console.error('Error deleting todo:', error);
           }
-     });
+     }
 }
 
 export const observableTodoStore = new ObservableTodoStore();

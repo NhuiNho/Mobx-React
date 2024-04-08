@@ -1,0 +1,12 @@
+.text-white {
+     color: #FFFFFF;
+}
+
+
+
+.task-to-do {
+     margin-top: 50px;
+     /* display: flex; */
+     align-items: center;
+     /* height: 271px; */
+}

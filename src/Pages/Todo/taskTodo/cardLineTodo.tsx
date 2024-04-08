@@ -1,4 +1,3 @@
-import { observer } from "mobx-react-lite"
 import { Todo } from "../../../model"
 import "../cardLineText/cardLineText.css"
 import "../iconEditDeleteTodo/iconEditDeleteTodo.css"
@@ -6,25 +5,25 @@ import "../iconEditDeleteTodo/iconEditDeleteTodo.css"
 interface CardLineTodoProps {
      todo: Todo,
      colorText: string,
-     handleDone: () => void,
-     handleDelete: () => void
+     onDone: () => void,
+     onDelete: () => void
 }
 
-const CardLineTodo: React.FC<CardLineTodoProps> = observer(({ todo, colorText, handleDone, handleDelete }) => {
+const CardLineTodo: React.FC<CardLineTodoProps> = ({ todo, colorText, onDone, onDelete }) => {
      const colorIcon = "#9E78CF"
 
      const onToggleCompleted = () => {
           const confirm = window.confirm("Bạn có chắc đã làm xong?")
           if (confirm) {
                todo.isShow = !todo.isShow; // Đảo ngược giá trị của todo.isShow khi checkbox được click
-               handleDone(); // Gọi hàm callback handleDone để thông báo rằng todo đã được cập nhật
+               onDone(); // Gọi hàm callback handleDone để thông báo rằng todo đã được cập nhật
           }
      }
 
      const handleDelete1 = () => {
           const confirm = window.confirm("Bạn có chắc muốn xóa?")
           if (confirm) {
-               handleDelete()
+               onDelete()
           }
      }
 
@@ -59,6 +58,6 @@ const CardLineTodo: React.FC<CardLineTodoProps> = observer(({ todo, colorText, h
                </div>
           </div>
      )
-})
+}
 
 export default CardLineTodo

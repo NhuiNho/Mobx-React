@@ -13,3 +13,9 @@
 .color-text-task-todo {
      color: #9E78CF
 }
+
+.buttonDone {
+     background: #15101C;
+     outline: #15101C;
+     border: 0px solid;
+}
