@@ -4,22 +4,8 @@
      margin-bottom: 50px;
 }
 
-.buttonNew {
-     /* Rectangle 5 */
-     width: 40px;
-     height: 40px;
-     margin-left: 10px;
-     /* Khoảng cách từ button đến input */
-     background: #9E78CF;
-     border-radius: 10px;
-     outline: #9E78CF;
-}
 
-.buttonNew:hover {
-     background: #000;
-}
-
-.inputNew {
+.addNew .inputNew {
      width: 100%;
      /* 100% - 40px cho button + 10px margin-left */
      height: 40px;
@@ -30,8 +16,19 @@
      color: #777777;
 }
 
-.inputNew:hover,
+.addNew .inputNew:hover,
 .inputNew:focus {
      border: 1px solid blue;
      /* Border xanh khi hover hoặc focus vào input */
+}
+
+.addNew .buttonNew {
+     /* Rectangle 5 */
+     width: 40px;
+     height: 40px;
+     margin-left: 10px;
+     /* Khoảng cách từ button đến input */
+     background: #9E78CF;
+     border-radius: 10px;
+     outline: #9E78CF;
 }
