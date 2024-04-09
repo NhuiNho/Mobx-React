@@ -30,8 +30,10 @@ const CardLineTodo: React.FC<CardLineTodoProps> = ({ todo, colorText, onDone, on
      return (
           <div className="card">
                <div className={`card-content ${colorText}`}>
-                    <div className="text">
-                         {todo.name}
+                    <div className="text-container">
+                         <div className="text">
+                              {todo.name}
+                         </div>
                     </div>
                     <div className="icon-container">
                          <button type="button" className="buttonDone" onClick={() => onToggleCompleted()}>

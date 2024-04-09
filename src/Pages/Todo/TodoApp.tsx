@@ -38,14 +38,11 @@ const TodoApp: React.FC<TodoListProps> = observer(({ store }) => {
           <div>
                <div className="TodoApp">
                     <div className="container">
-                         <div className="inner-container">
+                         <TodoInput onAddTodo={(todoName) => onNewTodo(todoName)} />
 
-                              <TodoInput onAddTodo={(todoName) => onNewTodo(todoName)} />;
+                         <TaskTodo taskTodo={store.taskTodo} onUpdateTodo={(todo) => handleTodoUpdate(todo)} onDeleteTodo={(id) => handleTodoDelete(id)} />
 
-                              <TaskTodo taskTodo={store.taskTodo} onUpdateTodo={(todo) => handleTodoUpdate(todo)} onDeleteTodo={(id) => handleTodoDelete(id)} />
-
-                              <TaskDone taskDone={store.taskDone} />
-                         </div>
+                         <TaskDone taskDone={store.taskDone} />
                     </div>
                </div>
           </div>

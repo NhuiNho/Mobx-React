@@ -13,8 +13,10 @@ const CardLineText: React.FC<CardLineTextProps> = observer(({ todo, colorText })
      return (
           <div className="card">
                <div className={`card-content ${colorText}`}>
-                    <div className="text">
-                         {todo.name}
+                    <div className="text-container">
+                         <div className="text">
+                              {todo.name}
+                         </div>
                     </div>
                </div>
           </div>
