@@ -14,6 +14,7 @@ const TaskTodo: React.FC = () => {
      return (
           <div className="task__todo_todoapp">
                <span className="text__task_todo_todoapp">Tasks todo - {taskTodo.length}</span>
+          
                <div className="scroll-task">
                     {taskTodo.map((value: Todo, index: number) =>
                          <CardLineTodo key={index} todo={value} colorText={colorText} />)}

@@ -11,15 +11,6 @@ const TaskDone: React.FC = () => {
 
      const taskDone = TodoStore.taskDone
 
-     // const sortedTaskTodo = taskDone.sort((a: Todo, b: Todo) => {
-     //      // Sử dụng phương thức getTimestamp() của ObjectId để lấy thời gian tạo
-     //      const timeA = a.id.getTimestamp().getTime();
-     //      const timeB = b.id.getTimestamp().getTime();
-
-     //      // So sánh thời gian tạo của các đối tượng để xác định thứ tự sắp xếp
-     //      return timeA - timeB;
-     //  });
-
      return (
           <div className="task__done_todoapp">
                <span className="text__task_done_todoapp">Done - {taskDone.length}</span>
