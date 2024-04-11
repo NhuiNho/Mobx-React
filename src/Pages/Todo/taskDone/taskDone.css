@@ -10,6 +10,7 @@
 }
 
 .scroll-task {
+     margin-top: 17px;
      overflow-y: auto;
      /* Hiển thị thanh cuộn dọc khi nội dung vượt quá kích thước */
      max-height: 220px;

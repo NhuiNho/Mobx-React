@@ -14,7 +14,7 @@ const TodoApp: React.FC = () => {
                <div className="body_todoapp">
                     <div className="container_todoapp">
                          <div className="inner__container_todoapp">
-                              <TodoInput />;
+                              <TodoInput />
 
                               <TaskTodo />
 
