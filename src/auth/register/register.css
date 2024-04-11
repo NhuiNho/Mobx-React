@@ -1,0 +1,165 @@
+.body__register {
+     font-family: "Nunito", sans-serif;
+}
+
+.body__register .page__wrapper_register {
+     overflow: hidden;
+}
+
+.page__wrapper_register .page_register {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.page_register .image__here_register {
+     width: 659px;
+     height: 1024px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #c4c4c4;
+}
+
+.image__here_register .image_register {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.page_register .container_register {
+     width: 781px;
+     height: 1024px;
+     background: #ffffff;
+     padding: 177.7px 0 0 189.96px;
+}
+
+.container_register .title_register {
+     font-size: 34.4px;
+     font-weight: 700;
+     line-height: 46.92px;
+     text-align: left;
+}
+
+.container_register .note_register {
+     color: #11175D;
+     font-size: 20.64px;
+     font-weight: 400;
+     line-height: 28.15px;
+     text-align: left;
+     opacity: 0.5;
+     margin-top: 10px;
+}
+
+.container_register .input__form_register {
+     position: relative;
+     margin-top: 70px;
+     width: 368.09px;
+     height: 104.06px;
+}
+
+.input__form_register .label_register {
+     position: absolute;
+     top: -25px;
+     left: 30px;
+     width: 136.74px;
+     height: 45.58px;
+     pointer-events: none;
+     background-color: #ffffff;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.label_register .text__label {
+     color: #11175D;
+     font-size: 13.76px;
+     opacity: 0.7;
+     font-weight: 600;
+     line-height: 18.77px;
+     letter-spacing: 0.075em;
+     text-align: left;
+}
+
+.input__form_register .input_register {
+     width: 368.09px;
+     height: 81.7px;
+     border-radius: 8.6px;
+     border: none;
+     box-shadow: 0 0 0 1.72px rgba(17, 23, 93, 0.3);
+
+     color: #11175D;
+     text-align: left;
+     font-size: 20.64px;
+     font-weight: 600;
+     line-height: 28.15px;
+
+     padding-left: 43px;
+}
+
+.input__form_register .input_register::placeholder {
+     color: #11175D;
+     text-align: left;
+     font-size: 20.64px;
+     font-weight: 600;
+     line-height: 28.15px;
+}
+
+.container_register .button__content_register {
+     padding-top: 30px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.button__content_register .button__signup_register {
+     background: #193FF6;
+     width: 207.27px;
+     height: 67.94px;
+     border: none;
+     border-radius: 86px;
+     color: #ffffff;
+     text-decoration: none;
+     box-shadow: 0;
+     font-size: 20.64px;
+     font-weight: 600;
+     line-height: 28.15px;
+     color: rgba(255, 255, 255, 1);
+}
+
+.button__content_register .button__signup_register:hover {
+     color: #193FF6;
+     background: none;
+     border: 2px solid #193FF6;
+}
+
+.button__content_register .or_register {
+     color: #11175D;
+     font-size: 20.64px;
+     font-weight: 600;
+     line-height: 28.15px;
+     text-align: left;
+     margin-left: 25px;
+     margin-right: 25px;
+}
+
+.button__content_register .icon__container_register {
+     width: 49.02px;
+     height: 49.02px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: 25px;
+}
+
+.icon__container_register:last-child {
+     margin-right: 0;
+}
+
+.icon__facebook_register,
+.icon__google_register {
+     border: none;
+     outline: none;
+     background: none;
+}

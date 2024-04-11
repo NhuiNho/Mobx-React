@@ -9,7 +9,6 @@ export class ObservableTodoStore {
           makeObservable(this, {
                todos: observable,
                completedTodosCount: computed,
-               // report: computed,
                taskTodo: computed,
                taskDone: computed,
                addTodo: action,
@@ -46,15 +45,6 @@ export class ObservableTodoStore {
                todo => todo.isShow === true
           ).length;
      }
-
-     // get report() {
-     //      if (this.todos.length === 0)
-     //           return "<none>";
-     //      const nextTodo = this.todos.find(todo => todo.isShow === false);
-
-     //      return `Next todo: "${nextTodo ? nextTodo.name : "<none>"}". ` +
-     //           `Progress: ${this.completedTodosCount}/${this.todos.length}`;
-     // }
 
      async addTodo(todo: Todo) {
           try {

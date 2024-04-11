@@ -1,30 +1,21 @@
-.TodoApp {
+.body_todoapp {
+     background: rgba(29, 24, 37, 1);
+     box-sizing: border-box;
+     margin: auto;
      width: 583px;
      height: 758px;
-     margin: auto;
-     /* Căn giữa khung bên ngoài */
-     border: 1px solid #000;
-     /* Viền đen */
-     box-sizing: border-box;
-     padding: 0 20px 0 0;
-     /* Khoảng cách từ viền của khung đến container bên trong */
-     background: #1D1825;
      border-radius: 20px;
+     font-family: "Inter", sans-serif;
 }
 
-.TodoApp:hover {
-     border: 5px solid blue;
-}
-
-.container {
+.body_todoapp .container_todoapp {
      display: flex;
      flex-direction: column;
-     /* Định dạng các phần tử con theo chiều dọc */
      align-items: center;
-     /* Canh giữa các phần tử con theo chiều ngang */
-     margin: 50px 50px 50px 50px;
+     padding: 50px 86px 100px 65px;
 }
 
-.inner-container {
+.container_todoapp .inner__container_todoapp {
      width: 100%;
+     height: 100%;
 }

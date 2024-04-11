@@ -1,12 +1,8 @@
-import TodoApp from "./Pages/Todo/TodoApp";
-import { observableTodoStore } from "./store/ObservableTodoStore";
-
+import RouterCustom from "./router";
 
 const App = () => {
   return (
-    <div className="App">
-      <TodoApp store={observableTodoStore} />
-    </div>
+    <RouterCustom />
   );
 }
 

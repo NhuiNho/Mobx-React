@@ -1,0 +1,186 @@
+.body__login2 {
+     font-family: "Open Sans", sans-serif;
+}
+
+.body__login2 .page__wrapper_login2 {
+     overflow: hidden;
+}
+
+.page__wrapper_login2 .page_login2 {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.page_login2 .image__here_login2 {
+     width: 672px;
+     height: 1024px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(196, 196, 196, 1);
+}
+
+.page_login2 .container_login2 {
+     width: 768px;
+     height: 1024px;
+     padding-left: 192.8px;
+     padding-top: 81px;
+}
+
+.container_login2 .container__logo_login2 {
+     display: flex;
+}
+
+.container_login2 .logo_login2 {
+     width: 28.34px;
+     height: 28.34px;
+     margin-right: 9.17px;
+}
+
+.container_login2 .text__logo_login2 {
+     font-family: Open Sans;
+     font-size: 20.01px;
+     font-weight: 800;
+     line-height: 27.25px;
+     letter-spacing: 0.02em;
+     text-align: left;
+     color: rgba(3, 1, 76, 1);
+}
+
+.container_login2 .title_login2 {
+     font-family: Open Sans;
+     font-size: 33.34px;
+     font-weight: 700;
+     line-height: 45.41px;
+     text-align: left;
+     color: rgba(3, 1, 76, 1);
+     margin-top: 154.57px;
+     margin-bottom: 29.18px;
+}
+
+.container_login2 .create__link_login2 {
+     display: flex;
+}
+
+.create__link_login2 .btn__create_link_login2 {
+     border: 0.83px solid rgba(3, 1, 76, 0.3);
+     border-radius: 8.34px;
+     background: none;
+     width: 100%;
+
+     width: 220.9px;
+     height: 62.52px;
+}
+
+.create__link_login2 .btn__create_link_login2:last-child {
+     margin-right: 113px;
+     margin-left: 19.58px;
+}
+
+.btn__create_link_login2 .content__btn_create_link_login2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.content__btn_create_link_login2 .text__btn_create_link_login2 {
+     font-family: Open Sans;
+     font-size: 13.34px;
+     font-weight: 600;
+     line-height: 18.16px;
+     letter-spacing: 0.02em;
+     text-align: left;
+     color: rgba(3, 1, 76, 1);
+     margin-left: 9.66px;
+}
+
+.container_login2 .input__box_login2 {
+     margin-top: 32.1px;
+}
+
+.input__box_login2 .label_login2 {
+     font-family: Open Sans;
+     font-size: 13.34px;
+     font-weight: 400;
+     line-height: 18.16px;
+     text-align: left;
+     color: rgba(3, 1, 76, 0.5);
+}
+
+.input__box_login2 .input__container_login2 {
+     position: relative;
+     width: 372.2px;
+     height: 78.36px;
+}
+
+.input__container_login2 .btn__showpw_login2 {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     border: none;
+     background: none;
+     right: 0px;
+}
+
+.input__container_login2 .input_login2 {
+     border: none;
+     border-bottom: 0.83px solid rgba(3, 1, 76, 0.2);
+     width: 372.2px;
+
+     font-family: Open Sans;
+     font-size: 20.01px;
+     font-weight: 600;
+     line-height: 27.25px;
+     text-align: left;
+     color: rgba(3, 1, 76, 1);
+
+     padding: 15.84px 0 16.67px 0;
+}
+
+.input__container_login2 .input_login2::placeholder {
+     font-family: Open Sans;
+     font-size: 20.01px;
+     font-weight: 600;
+     line-height: 27.25px;
+     text-align: left;
+     color: rgba(3, 1, 76, 1);
+}
+
+.container_login2 .btn_login {
+     margin-top: 60.02px;
+     width: 406.8px;
+     height: 86.69px;
+     border-radius: 8.34px;
+     border: none;
+     background: rgba(255, 154, 0, 1);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+     font-family: Open Sans;
+     font-size: 20.01px;
+     font-weight: 600;
+     line-height: 27.25px;
+     color: rgba(255, 255, 255, 1);
+}
+
+.container_login2 .register__link_login2 {
+     margin-top: 35.01px;
+     font-family: Open Sans;
+     font-size: 13.34px;
+     font-weight: 400;
+     line-height: 18.16px;
+     text-align: left;
+}
+
+.register__link_login2 .link__register_login2 {
+     font-family: Open Sans;
+     font-size: 13.34px;
+     font-weight: 700;
+     line-height: 18.16px;
+     text-align: left;
+     color: rgba(255, 154, 0, 1);
+     text-decoration: none;
+}
+
+.register__link_login2 .link__register_login2:hover {
+     text-decoration: underline;
+}

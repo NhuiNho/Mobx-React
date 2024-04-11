@@ -1,12 +1,12 @@
-.text-white {
-     color: #FFFFFF;
+.task__todo_todoapp {
+     align-items: center;
 }
 
-
-
-.task-to-do {
-     margin-top: 50px;
-     /* display: flex; */
-     align-items: center;
-     /* height: 271px; */
+.task__todo_todoapp .text__task_todo_todoapp {
+     color: rgba(255, 255, 255, 1);
+     font-family: Inter;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 19.36px;
+     text-align: left;
 }

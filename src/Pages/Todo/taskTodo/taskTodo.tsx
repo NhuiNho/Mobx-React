@@ -1,24 +1,25 @@
+import { observer } from "mobx-react-lite";
 import { Todo } from "../../../model";
+import { observableTodoStore } from "../../../store/ObservableTodoStore";
 import CardLineTodo from "./cardLineTodo";
+import "./taskTodo.css";
 
-interface TaskTodoProps {
-     taskTodo: Todo[];
-     onUpdateTodo: (todo: Todo) => () => void;
-     onDeleteTodo: (id: string) => () => void;
-}
+const TodoStore = observableTodoStore
 
-const TaskTodo: React.FC<TaskTodoProps> = ({ taskTodo, onUpdateTodo, onDeleteTodo }) => {
+const TaskTodo: React.FC = () => {
      const colorText = "color-text-task-todo"
 
+     const taskTodo = TodoStore.taskTodo
+
      return (
-          <div className="task-to-do">
-               <span className="text-white">Tasks todo - {taskTodo.length}</span>
+          <div className="task__todo_todoapp">
+               <span className="text__task_todo_todoapp">Tasks todo - {taskTodo.length}</span>
                <div className="scroll-task">
                     {taskTodo.map((value: Todo, index: number) =>
-                         <CardLineTodo key={index} todo={value} colorText={colorText} onDone={onUpdateTodo(value)} onDelete={onDeleteTodo(value.id)} />)}
+                         <CardLineTodo key={index} todo={value} colorText={colorText} />)}
                </div>
           </div>
      )
 }
 
-export default TaskTodo
+export default observer(TaskTodo)

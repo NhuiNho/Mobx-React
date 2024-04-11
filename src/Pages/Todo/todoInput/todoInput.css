@@ -1,37 +1,29 @@
-.addNew {
+.add__new_todoapp {
      display: flex;
      align-items: center;
-     margin-bottom: 20px;
+     margin-bottom: 59px;
 }
 
-.buttonNew {
-     /* Rectangle 5 */
+.add__new_todoapp .input__new_todoapp {
+     width: 381px;
+     height: 40px;
+     border-radius: 10px;
+     border: 1px solid rgba(158, 120, 207, 1);
+     background: rgba(29, 24, 37, 1);
+
+     font-family: Inter;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 19.36px;
+     text-align: left;
+     color: rgba(119, 119, 119, 1);
+     padding: 11px 15px 10px 15px;
+}
+
+.add__new_todoapp .button__new_todoapp {
      width: 40px;
      height: 40px;
-     margin-left: 10px;
-     /* Khoảng cách từ button đến input */
-     background: #9E78CF;
      border-radius: 10px;
-     outline: #9E78CF;
-}
-
-.buttonNew:hover {
-     background: #000;
-}
-
-.inputNew {
-     width: 100%;
-     /* 100% - 40px cho button + 10px margin-left */
-     height: 40px;
-     border: 1px solid #9E78CF;
-     border-radius: 10px;
-     background: #1D1825;
-     padding: 0 20px;
-     color: #777777;
-}
-
-.inputNew:hover,
-.inputNew:focus {
-     border: 1px solid blue;
-     /* Border xanh khi hover hoặc focus vào input */
+     background: rgba(158, 120, 207, 1);
+     margin-left: 11px;
 }

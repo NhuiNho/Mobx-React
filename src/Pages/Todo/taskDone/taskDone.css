@@ -1,13 +1,18 @@
-.task-done {
+.task__done_todoapp {
      margin-top: 50px;
      /* display: flex; */
      align-items: center;
 }
 
+.text__task_done_todoapp {
+     color: #fff;
+     margin-bottom: 17px;
+}
+
 .scroll-task {
      overflow-y: auto;
      /* Hiển thị thanh cuộn dọc khi nội dung vượt quá kích thước */
-     max-height: 250px;
+     max-height: 220px;
      /* 180px là tổng chiều cao của phần addNew, margin-top của task-to-do và task-done */
 }
 
