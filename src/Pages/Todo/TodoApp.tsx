@@ -1,4 +1,3 @@
-import { observer } from "mobx-react-lite"
 import React from "react"
 import "./TodoApp.css"
 import TaskDone from "./taskDone/taskDone"
@@ -27,4 +26,4 @@ const TodoApp: React.FC = () => {
      )
 }
 
-export default observer(TodoApp)
+export default TodoApp

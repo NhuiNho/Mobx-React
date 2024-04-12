@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import TodoApp from "../Pages/Todo/TodoApp"
 import MasterLayout from "../Pages/theme/masterLayout"
 import Login from "../auth/login/login"
-import Register1 from "../auth/register2/register1"
+import Register1 from "../auth/register1/register1"
 import { ROUTERS } from "../utils/router"
 
 

@@ -21,7 +21,6 @@
      white-space: nowrap;
      overflow: hidden;
      text-overflow: ellipsis;
-
      font-family: Inter;
      font-size: 16px;
      font-weight: 400;
@@ -39,6 +38,25 @@
      text-decoration: line-through
 }
 
-.text-white {
-     color: #fff;
+.icon__container_todoapp {
+     display: flex;
+}
+
+.icon__container_todoapp .button__done_todoapp {
+     background: none;
+     outline: none;
+     border: none;
+     margin-right: 8px;
+     position: relative;
+}
+
+.button__done_todoapp .icon {
+     position: absolute;
+     right: 0px;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.button__done_todoapp .icon:last-child {
+     margin-right: 0;
 }

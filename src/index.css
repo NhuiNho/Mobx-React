@@ -7,3 +7,25 @@
 button {
   cursor: pointer;
 }
+
+/* Thiết lập kích thước của thanh cuộn */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Chiều rộng thanh cuộn */
+}
+
+/* Thiết lập màu của thanh cuộn */
+::-webkit-scrollbar-track {
+  background: #15101C;
+  /* Màu nền của thanh cuộn */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Màu của nút cuộn */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Màu của nút cuộn khi di chuột qua */
+}
