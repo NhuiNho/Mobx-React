@@ -6,7 +6,6 @@ const Login: React.FC = () => {
 
      return (
           <div className="body__login">
-               <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></link>
                <div className="container_login">
                     <h1 className="title_login">Login to your Account</h1>
 

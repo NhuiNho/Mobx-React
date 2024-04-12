@@ -6,7 +6,6 @@ const Login1: React.FC = () => {
 
      return (
           <div className="body__login1">
-               <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></link>
                <div className="page__wrapper_login1">
                     <div className="page_login1">
                          <div className="container_login1">

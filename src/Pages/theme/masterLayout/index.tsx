@@ -4,6 +4,7 @@ import Header from "../header";
 
 const MasterLayout = ({ children, ...props }: { children: ReactNode }) => {
 
+
      return (
           <div {...props}>
                <Header />

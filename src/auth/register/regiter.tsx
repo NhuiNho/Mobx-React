@@ -5,7 +5,6 @@ const Register: React.FC = () => {
 
      return (
           <div className="body__register">
-               <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
                <div className="page__wrapper_register">
                     <div className="page_register">
                          <div className="container_register">
